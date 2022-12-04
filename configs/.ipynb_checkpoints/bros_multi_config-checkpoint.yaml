@@ -1,0 +1,13 @@
+pretrained:
+  encode_path: weights/bros/encode.pt
+  itc_path: weights/bros/itc.pt
+  multi_path: weights/bros/multi_net.pt
+task: multi
+model:
+  tokenizer_path: configs/phoBert
+  max_seq_length: 1024
+  class_names:
+  - "others"
+  - "header"
+  - "question"
+  - "answer"
